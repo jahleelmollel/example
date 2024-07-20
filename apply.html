@@ -3,45 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apply as an Influencer - Mollél Cosmetics</title>
+    <link rel="stylesheet" href="apply.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="Website.html">Homepage</a>
-    <h1>APPLY AS AN INFLUENCER</h1>
-    <form action="" method="post">
-        <label for="fn">Fullname:</label><br>
-        <input type="text"id="fn"
-        placeholder="Enter Fullname" ><br><br>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Website.html">Homepage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="application-form">
+            <h1>Apply as an Influencer</h1>
+            <form action="apply.php" method="post">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" required>
+                
+                <label for="followers">Number of Followers:</label>
+                <input type="number" id="followers" name="followers" placeholder="Number of Followers" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                
+                <label for="posting-time">Average Posting Time:</label>
+                <input type="time" id="posting-time" name="posting-time" required>
+                
+                <label for="platforms">Platforms:</label>
+                <div class="checkbox-group" id="platforms">
+                    <input type="checkbox" id="instagram" name="platforms[]" value="Instagram">
+                    <label for="instagram">Instagram</label>
+                    <input type="checkbox" id="tiktok" name="platforms[]" value="Tiktok">
+                    <label for="tiktok">Tiktok</label>
+                    <input type="checkbox" id="youtube" name="platforms[]" value="Youtube">
+                    <label for="youtube">Youtube</label>
+                </div>
 
-        <input type="number"
-        placeholder="Number of Followers"><br><br>
+                <label for="message">Why do you want to join us?</label>
+                <textarea id="message" name="message" cols="30" rows="5" placeholder="Tell us why..." required></textarea>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">--Select Gender--</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="notsay">Rather not say</option>
+                </select>
 
-        <input type="email"
-        placeholder="email" ><br><br>
-
-        <input type="time"
-        placeholder="average posting time "><br><br>
-
-<input type="checkbox" name="Instagram" id="Japanese"><label for="Japanese">Instagram
-</label><br>
-
-<input type="checkbox" name="Tiktok" id="Swahili"><label for="Swahili">Tiktok
-</label><br>
-
-<input type="checkbox" name="Youtube" id="English"><label for="English">Youtube
-</label><br>
-
-<textarea name="" id="" cols="30" rows="10"></textarea>
-
-<select name="" id="">
-    <option value="">--Select Gender--</option>
-    <option value="">Female</option>
-    <option value="">Male</option>
-    <option value="">Rather not say</option>
-</select>
-
-<br><br>
-<input type="submit" value="save details">
-    </form>
+                <button type="submit">Save Details</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mollél Cosmetics. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+

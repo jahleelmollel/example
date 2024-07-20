@@ -3,19 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop - Mollél Cosmetics</title>
+    <link rel="stylesheet" href="shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-<a href="Website.html">Homepage</a>
-    <p>Mollél Cosmetics offers a diverse range of high-quality cosmetic products designed to enhance and elevate your beauty routine. From luxurious moisturizers and potent serums to nourishing cleansers and revitalizing masks, our collection caters to every skincare need. Dive into a world of vibrant color and creativity with our selection of makeup products, including silky-smooth foundations, richly pigmented lipsticks, and versatile eyeshadow palettes. Indulge your senses with our exquisite perfumes, crafted to captivate and enchant. Mollél Cosmetics is committed to using premium ingredients and innovative formulations to deliver results that exceed expectations. Whether you're seeking radiant skin, flawless makeup looks, or signature scents, our gallery showcases products that inspire confidence and celebrate individual beauty.</p>
-    <img src="Images/1cefe02071bf028becd03d5ee76b76c2.jpeg" alt="">
-    <img src="Images/1ea46a6325125c9864649b366c945aaf.jpeg" alt="">
-    <img src="Images/388c35be76790dee01b23c45753459dc.jpeg" alt="">
-    <img src="Images/4bd0fda35b94d616dcc8d93e5bf5f203.jpeg" alt="">
-    <img src="Images/a00e36057375216fbbf67f361e2920e6.jpeg" alt="">
-    <img src="Images/ c9cded6cdc82fdd155787c34535db0d6.jpeg" alt="">
-    <img src="Images/ecfd896e857c93f69ef4ae36b75be44d.jpeg" alt="">
-
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Website.html">Homepage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="shop-title">
+            <h1>Our Products</h1>
+        </div>
+        <p class="shop-description">Mollél Cosmetics offers a diverse range of high-quality cosmetic products designed to enhance and elevate your beauty routine. From luxurious moisturizers and potent serums to nourishing cleansers and revitalizing masks, our collection caters to every skincare need. Dive into a world of vibrant color and creativity with our selection of makeup products, including silky-smooth foundations, richly pigmented lipsticks, and versatile eyeshadow palettes. Indulge your senses with our exquisite perfumes, crafted to captivate and enchant. Mollél Cosmetics is committed to using premium ingredients and innovative formulations to deliver results that exceed expectations. Whether you're seeking radiant skin, flawless makeup looks, or signature scents, our gallery showcases products that inspire confidence and celebrate individual beauty.</p>
+        <div class="product-grid">
+            <div class="product">
+                <img src="Images/1cefe02071bf028becd03d5ee76b76c2.jpeg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Images/1ea46a6325125c9864649b366c945aaf.jpeg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Images/388c35be76790dee01b23c45753459dc.jpeg" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Images/4bd0fda35b94d616dcc8d93e5bf5f203.jpeg" alt="Product 4">
+                <h2>Product 4</h2>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Images/a00e36057375216fbbf67f361e2920e6.jpeg" alt="Product 5">
+                <h2>Product 5</h2>
+                <p>$59.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Images/c9cded6cdc82fdd155787c34535db0d6.jpeg" alt="Product 6">
+                <h2>Product 6</h2>
+                <p>$69.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="Images/ecfd896e857c93f69ef4ae36b75be44d.jpeg" alt="Product 7">
+                <h2>Product 7</h2>
+                <p>$79.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="address-form">
+            <h2>Delivery Address</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mollél Cosmetics. All rights reserved.</p>
+    </footer>
 </body>
 </html>
